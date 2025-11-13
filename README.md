@@ -105,8 +105,7 @@ http://localhost:8000
 
 ---
 
-### | **Command**                               | **Description**                                    | **Example Usage**               |
-| ----------------------------------------- | -------------------------------------------------- | ---------------------------------------- |
+### Docker Commands
 
 | `docker --version`                        | Check installed Docker version                     | `Docker version 25.0.3, build abc123`    |
 
