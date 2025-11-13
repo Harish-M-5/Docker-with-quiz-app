@@ -69,7 +69,7 @@ http://localhost:3000
 
 Step 1 – Base Image
 
-FROM node:18-alpine
+FROM node:20-alpine
 
 
 Uses a lightweight Node.js image for minimal size.
@@ -90,27 +90,49 @@ COPY . .
 ---
 
 ### 🧭 Run Using Docker
+<img width="1920" height="1080" alt="Screenshot 2025-11-09 175058" src="https://github.com/user-attachments/assets/bc6a99d8-3110-4c75-8181-2001516f0f0c" />
+
+
 1️⃣ Build Docker Image
 docker build -t sports-quiz .
 
 2️⃣ Run Container
-docker run -d -p 3000:3000 sports-quiz
+docker run -d -p 8000:3000 sports-quiz
 
 3️⃣ Open in Browser
-http://localhost:3000
+http://localhost:8000
+
 
 ---
 
 ### | **Command**                               | **Description**                                    | **Example Usage**               |
 | ----------------------------------------- | -------------------------------------------------- | ---------------------------------------- |
+
 | `docker --version`                        | Check installed Docker version                     | `Docker version 25.0.3, build abc123`    |
+
 | `docker build -t <image_name> .`          | Build a Docker image from Dockerfile               | `docker build -t sports-quiz .`          |
+
 | `docker images`                           | List all Docker images available locally           | Shows all image IDs, sizes, tags         |
+
 | `docker run -d -p 3000:3000 <image_name>` | Run container in detached mode and map ports       | `docker run -d -p 3000:3000 sports-quiz` |
+
 | `docker stop <container_id>`              | Stop a running container                           | `docker stop a1b2c3d4e5`                 |
+
+
 | `docker start <container_id>`             | Start a stopped container                          | `docker start a1b2c3d4e5`                |
+
 | `docker restart <container_id>`           | Restart a container                                | `docker restart a1b2c3d4e5`              |
 
 ---
+
+
+## 🎥Output
+Docker using:
+<img width="1920" height="1080" alt="Screenshot 2025-11-13 184321" src="https://github.com/user-attachments/assets/ac589e99-1803-4771-b939-61599fbeb635" />
+
+Quiz app:
+<img width="1920" height="1080" alt="Screenshot 2025-11-09 165931" src="https://github.com/user-attachments/assets/b11e4aab-f685-414e-a1b6-b176dc883cf3" />
+
+<img width="1920" height="1080" alt="Screenshot 2025-11-09 165915" src="https://github.com/user-attachments/assets/22dd837d-c861-456b-ae24-292023083847" />
 
 
